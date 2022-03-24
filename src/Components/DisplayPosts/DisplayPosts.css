@@ -1,0 +1,14 @@
+.name{
+    font-weight:bold;
+}
+
+.post{
+    font-style: normal;
+}
+
+.postbox{
+    text-align: center;
+    border:.4em;
+    border-style:dotted dotted solid solid;
+    border-radius: 1em;
+}

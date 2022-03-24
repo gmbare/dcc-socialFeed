@@ -1,0 +1,90 @@
+*.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+ }
+
+.liked{
+    visibility: hidden;
+    /* position: absolute;
+    right:11em; */
+}
+.null{
+    visibility: hidden;
+    /* position: absolute;
+    right:11em; */
+}
+
+.roundcorner{
+    border-radius: 20em;
+    width:1em;
+}
+
+.nulllabel{
+    position:absolute;
+    top:0em;
+    right:0em;
+    border-radius: 1em;
+}
+.likedlabel{
+    position: absolute;
+    right:6em;
+    border-radius: 20em;
+}
+.dislikedlabel{
+    position: absolute;
+    right:5em;
+    border-radius: 20em;
+}
+
+.liked + label >label{
+    transition: 500ms;
+    visibility: hidden;
+}
+
+.liked:checked + label{
+    transition: 500ms;
+    visibility: hidden;
+}
+.liked:checked + label >label{
+    transition: 500ms;
+    background-color: green;
+    visibility: visible;
+}
+
+.null:checked + label{
+    transition: 500ms;
+    background-color: white;
+}
+
+.disliked + label >label{
+    transition: 500ms;
+    visibility: hidden;
+}
+
+.disliked:checked + label{
+    transition: 500ms;
+    visibility: hidden;
+}
+.disliked:checked + label >label{
+    transition: 500ms;
+    background-color: red;
+    visibility: visible;
+}
+
+.disliked{
+    visibility: hidden;
+    position: absolute;
+    right:10em;
+}
+
+/* .disliked:checked ~.liked{
+    checked
+} */
