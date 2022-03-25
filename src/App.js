@@ -14,7 +14,7 @@ function App() {
     // setPost(entryReturnPost)
   }
 
-  const [socialPost, setsocialPost] = useState([{name: 'Felicity',post:'The day is wonderful and my night is ruined', liked:0}])
+  const [socialPost, setsocialPost] = useState([{name: 'Felicity',post:'The day is wonderful and my night is ruined', liked:0, date: (Date().substring(0,28))}])
 
 
 

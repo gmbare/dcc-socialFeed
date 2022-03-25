@@ -13,7 +13,7 @@ const DisplayPosts = (props) => {
                 return(
                     <div key={index}>
                         <span className='name'>
-                        {entry.name}</span>
+                        {entry.name}<span className='date'>{entry.date}</span></span>
                         <span className='post'><br/>
                         {entry.post}</span>
                     <LikeDislike index={index}/>
